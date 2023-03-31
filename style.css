@@ -44,12 +44,13 @@ header{
 
 .logo{
     color: rgb(238, 197, 169);
-    font-size: 30px;
-    font-family: Arial;
+    font-size: 25px;
+    font-family: inherit;
     padding-left: 20px;
     float: left;
     padding-top: 20px;
     margin-top: 5px;
+
 }
 
 .logo:hover{
