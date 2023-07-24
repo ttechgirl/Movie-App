@@ -6,10 +6,10 @@
 }
 
 :root{
-   --primary-color: #d46363f3;
-   --secondary-color: #573737c4;
-   --footer-color: #573737c0;
-   --header-color: #573737;
+   --primary-color: #e4cdcdf3;
+   --secondary-color: #8d1a1afb;
+   --footer-color: ;
+   --header-color: var(--secondary-color);
 
 }
 
@@ -30,7 +30,7 @@ header{
     display: flex;
     background-color: var(--header-color);
     width: 100%;
-    height: 100px;
+    height: 80px;
     position:fixed; 
     z-index:2;
 
@@ -43,7 +43,7 @@ header{
 
 
 .logo{
-    color: rgb(238, 197, 169);
+    color: rgb(236, 228, 222);
     font-size: 25px;
     font-family: inherit;
     padding-left: 20px;
@@ -52,9 +52,16 @@ header{
     margin-top: 5px;
 
 }
+@media screen and (max-width:577px){
+    .logo{
+        font-size: medium;
+        margin: auto;
+        padding: auto;
+    }
+}
 
 .logo:hover{
-    color: rgb(194, 143, 14);
+    /*color: rgb(228, 163, 151);*/
 
 }
 
@@ -65,7 +72,7 @@ header{
     padding: 0.5rem 1rem;
     border-radius: 50px;
     font-size: 1rem;
-    color: rgb(238, 197, 169);
+    color: rgb(36, 30, 25);
     font-family: inherit;
     margin-top: 20px;
     margin-right: 50px;
@@ -99,7 +106,17 @@ header{
     color: #ebd9d9ee;
 
 }
+@media screen and (max-width:577px){
+    .search-container .search{
+        font-size: medium;
+        padding-left: 6px;
+        padding-right: 1px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        margin-left: 5px;
 
+    }
+}
 /* .search-container {
     float: right;
     display: flex;
@@ -132,9 +149,21 @@ input[type=text],  .search-container button {
     
 } */
 
-.btn i{
+i{
     float: right;
     color: #ebd9d9ee;
+    background-color:transparent;
+    padding: 14px;
+    margin-bottom: 100px;
+    margin-right: 16px;
+    font-size: 17px;
+    border: 0;
+    cursor: pointer;
+    display: block;
+    align-items: center;
+    padding-top: 20px;
+    margin-top: 5px;
+
     
 } 
 
@@ -188,15 +217,15 @@ main{
 }
 
 .movie-info span.white{
-    color: white;
+    color: rgb(173, 51, 51);
 }
 
 .movie-info span.green{
-    color: lightgreen
+    color: rgb(238, 107, 20)
 }
 
 .movie-info span.red{
-    color: rgba(46, 31, 28, 0.829);
+    color: rgba(51, 40, 37, 0.829);
 }
 
 .overview{
